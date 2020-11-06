@@ -5,11 +5,11 @@ This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree P
 <img src="snake_game.gif"/>
 
 ## User Interaction
-- When you run the application, a user input is asked to enter your name.
-- Welcome screen is displayed where user can either press `Return` key to start snake game or `Escape` key to quit.
-- A game ends when either snake dies or user presses `Escape` at any point of time.
-- An Exit screen is displayed with your game score and highest score and scorer name. User can press `Return` key to play game again or `Escape` key to quit.
-- Highest score and scorer in the game is stored in `dataLogger.txt` file under build directory. 
+- The game would ask for name of the player and is stored in playerinfo.txt along with score and date and time the game was played.
+- Player is presented with a Y or N option to decide to play the game or not. 
+- Y would let the game run as usual and N or any other input would abort the game
+- All the details of a specific game is stored in playerinfo.txt file. 
+
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -40,7 +40,7 @@ This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree P
 | _Criteria_                                                                                     	| _Comments_                                                                                                   	| 
 |:-----------------------------------------------------------------------------------------------	|:-------------------------------------------------------------------------------------------------------------------------	|
 | The project demonstrates an understanding of C++ functions and control structures.             	| A variety of control structures are used in the project.<br><br>The project code is clearly organized into functions. Please check all files under `src` directory.    | 
-| The project reads data from a file and process the data, or the program writes data to a file. 	| File `playerInfo.cpp` in the project writes `dataLogger.txt` file under build directory which stores high score and scorer name in the file.  	|
+| The project reads data from a file and process the data, or the program writes data to a file. 	| The project writes `playerinfo.txt` file directly in the workspace with details of the game played.  	|
 | The project accepts user input and processes the input.                                        	| File `main.cpp` accepts playerName as user input and uses that through the code structure.
 
 ### Object Oriented Programming
@@ -50,9 +50,7 @@ This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree P
 | The project uses Object Oriented Programming techniques.                            | The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks.
 | Classes use appropriate access specifiers for class members.                     	| All class data members are explicitly specified as public, protected, or private.
 | Class constructors utilize member initialization lists.                          	| All class members that are set to argument values are initialized through member initialization lists.   Examples such as `player.cpp`, `game.cpp`, `snake.h`.
-| Classes encapsulate behavior.                                                    	| Appropriate data and functions are grouped into classes. Member data that is subject to an invariant is hidden from the user. State is accessed via member functions. Refer `player.h`, `game.h`.
-| Overloaded functions allow the same function to operate on different parameters. 	| `Controller.h` has `HandleInput` function which is overloaded. `Render.h` has `Render()` and `renderTexture()` functions overloaded. 
-| Templates generalize functions in the project.                                   	| File `cleanup.h` has `cleanup` functions that used template
+
 
 ### Memory Management
 
