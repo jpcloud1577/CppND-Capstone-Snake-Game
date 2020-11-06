@@ -56,5 +56,5 @@ This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree P
 
 | _Criteria_                                                                       	| _Comments_
 |:-----------------------------------------------------------------------------------------------	|:-------------------------------------------------------------------------------------------------------------------------	|
-| The project makes use of references in function declarations.                             	| At least two variables are defined as references, or two functions use pass-by-reference in the project code. One of the many examples is in `controller.h` file  |
+
 | The project uses destructors appropriately.                                               	| `Renderer` class in `renderer.h` has destructor.| 
